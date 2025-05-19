@@ -1,0 +1,275 @@
+{
+    "electronics": {
+      "laptops": [
+        {
+          "id": "lap-001",
+          "name": "Dell XPS 13",
+          "price": 1299.99,
+          "isStock": true,
+          "description": "Ultra-portable performance laptop.",
+          "specification": "Intel i7, 16GB RAM, 512GB SSD, 13.3-inch 4K display",
+          "rating": 4.6,
+          "image": "https://cdnp.cody.mn/spree/images/2503636/large/Dell_XPS_13_9340_Laptop_-_Platinum.png"
+        },
+        {
+          "id": "lap-002",
+          "name": "HP Spectre x360",
+          "price": 1399.99,
+          "isStock": true,
+          "description": "Convertible premium laptop.",
+          "specification": "Intel i7, 16GB RAM, 1TB SSD, 13.5-inch OLED touch display",
+          "rating": 4.7,
+          "image": "https://m.media-amazon.com/images/I/71PUZ9o9U6L.jpg"
+        },
+        {
+          "id": "lap-003",
+          "name": "Lenovo ThinkPad X1 Carbon",
+          "price": 1499.99,
+          "isStock": false,
+          "description": "Business class ultrabook.",
+          "specification": "Intel i7, 16GB RAM, 512GB SSD, 14-inch FHD display",
+          "rating": 4.8,
+          "image": "https://p1-ofp.static.pub/medias/25617280768_X1_Carbon_g11_202404091151221744134671009.png"
+        },
+        {
+          "id": "lap-004",
+          "name": "Asus ROG Zephyrus G14",
+          "price": 1599.99,
+          "isStock": true,
+          "description": "Compact gaming powerhouse.",
+          "specification": "AMD Ryzen 9, 32GB RAM, 1TB SSD, RTX 3060, 14-inch QHD display",
+          "rating": 4.9,
+          "image": "https://www.custommacbd.com/cdn/shop/products/zephyrus-g14-01-500x500.jpg?v=1613634878"
+        },
+        {
+          "id": "lap-005",
+          "name": "Acer Swift 3",
+          "price": 799.99,
+          "isStock": true,
+          "description": "Affordable performance laptop.",
+          "specification": "AMD Ryzen 7, 16GB RAM, 512GB SSD, 14-inch FHD display",
+          "rating": 4.3,
+          "image": "https://fourstaritbd.com/wp-content/uploads/2022/12/acer-swift-3-sf313-53-579s-11th-gen-intel-core-i5-11609840971-price-in-bd-fourstarit.webp"
+        }
+      ],
+      "phones": [
+        {
+          "id": "ph-001",
+          "name": "Samsung Galaxy S24",
+          "price": 999.99,
+          "isStock": true,
+          "description": "Next-gen flagship smartphone.",
+          "specification": "Exynos 2400, 12GB RAM, 256GB Storage, 6.8-inch AMOLED",
+          "rating": 4.7,
+          "image": "https://gadgetbd.com/wp-content/uploads/2024/01/Samsung-S24-Ultra-Titanium-Grey.jpg"
+        },
+        {
+          "id": "ph-002",
+          "name": "Google Pixel 8 Pro",
+          "price": 1099.99,
+          "isStock": true,
+          "description": "Google's AI-driven flagship.",
+          "specification": "Google Tensor G3, 12GB RAM, 256GB Storage, 6.7-inch OLED",
+          "rating": 4.8,
+          "image": "https://kryinternational.com/wp-content/uploads/2024/02/Google-Pixel-8-Pro-price-in-bangladesh-n.jpg"
+        },
+        {
+          "id": "ph-003",
+          "name": "OnePlus 12",
+          "price": 899.99,
+          "isStock": true,
+          "description": "Fast and smooth flagship killer.",
+          "specification": "Snapdragon 8 Gen 3, 16GB RAM, 512GB Storage, 6.8-inch AMOLED",
+          "rating": 4.6,
+          "image": "https://dazzle.sgp1.cdn.digitaloceanspaces.com/23298/OnePlus-12-(1).png"
+        },
+        {
+          "id": "ph-004",
+          "name": "Xiaomi 14 Ultra",
+          "price": 1199.99,
+          "isStock": true,
+          "description": "Camera-centric flagship phone.",
+          "specification": "Snapdragon 8 Gen 3, 16GB RAM, 1TB Storage, 6.7-inch AMOLED",
+          "rating": 4.7,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Xiaomi-14-Ultra-Black-1718.jpg"
+        },
+        {
+          "id": "ph-005",
+          "name": "Asus ROG Phone 8 Pro",
+          "price": 1499.99,
+          "isStock": true,
+          "description": "Gaming beast smartphone.",
+          "specification": "Snapdragon 8 Gen 3, 24GB RAM, 1TB Storage, 6.78-inch AMOLED 165Hz",
+          "rating": 4.9,
+          "image": "https://dazzle.sgp1.cdn.digitaloceanspaces.com/23417/Asus-ROG-Phone-8-Pro.png"
+        },
+        {
+          "id": "ph-006",
+          "name": "Sony Xperia 1 V",
+          "price": 1399.99,
+          "isStock": true,
+          "description": "Pro-level camera phone.",
+          "specification": "Snapdragon 8 Gen 2, 12GB RAM, 256GB Storage, 6.5-inch 4K OLED",
+          "rating": 4.5,
+          "image": "https://www.mobiledokan.co/wp-content/uploads/2022/03/Sony-Xperia-1-IV-Violet.jpg"
+        },
+        {
+          "id": "ph-007",
+          "name": "Motorola Edge 40 Pro",
+          "price": 799.99,
+          "isStock": true,
+          "description": "Stylish curved display phone.",
+          "specification": "Snapdragon 8 Gen 2, 12GB RAM, 256GB Storage, 6.67-inch OLED",
+          "rating": 4.4,
+          "image": "https://www.assuredzone.com/bd/wp-content/uploads/sites/12/2023/04/Motorola-Edge-40-Pro-1.jpg"
+        }
+      ],
+      "smartwatches": [
+        {
+          "id": "sw-001",
+          "name": "Apple Watch Series 9",
+          "price": 399.99,
+          "isStock": true,
+          "description": "Latest Apple smartwatch with advanced health features.",
+          "specification": "GPS + Cellular, Always-On Retina Display, Blood Oxygen Sensor",
+          "rating": 4.8,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Apple-Watch-Series-9-(3)-6716.jpg"
+        },
+        {
+          "id": "sw-002",
+          "name": "Samsung Galaxy Watch 6",
+          "price": 349.99,
+          "isStock": true,
+          "description": "Premium smartwatch with fitness tracking.",
+          "specification": "GPS, Heart Rate Monitor, AMOLED Display",
+          "rating": 4.6,
+          "image": "https://diamu.com.bd/wp-content/uploads/2023/08/Samsung-Galaxy-Watch-6-40mm-2-1-600x600.jpg"
+        },
+        {
+          "id": "sw-003",
+          "name": "Fitbit Versa 4",
+          "price": 229.99,
+          "isStock": true,
+          "description": "Affordable fitness smartwatch.",
+          "specification": "Heart Rate, Sleep Tracking, Built-in GPS",
+          "rating": 4.4,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/Versa-4-Pink-Sand-5973.jpg"
+        },
+        {
+          "id": "sw-004",
+          "name": "Garmin Venu 2",
+          "price": 399.99,
+          "isStock": true,
+          "description": "Advanced GPS smartwatch with health metrics.",
+          "specification": "GPS, Pulse Ox, Music Storage, AMOLED Display",
+          "rating": 4.7,
+          "image": "https://www.startech.com.bd/image/cache/catalog/smart-watch/garmin/venu-2/venu-2-silver-01-500x500.webp"
+        },
+        {
+          "id": "sw-005",
+          "name": "Amazfit GTR 4",
+          "price": 179.99,
+          "isStock": true,
+          "description": "Stylish smartwatch with long battery life.",
+          "specification": "GPS, Heart Rate, SpO2, AMOLED Display",
+          "rating": 4.5,
+          "image": "https://www.penguin.com.bd/wp-content/uploads/2023/11/amazfit-gtr-4-smart-fitness-smar-6.webp"
+        }
+      ],
+      "macbooks": [
+        {
+          "id": "mb-001",
+          "name": "MacBook Air M2",
+          "price": 1199.99,
+          "isStock": true,
+          "description": "Lightweight and powerful MacBook Air.",
+          "specification": "Apple M2 chip, 8GB RAM, 256GB SSD, 13.6-inch Retina",
+          "rating": 4.8,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M2-13.6-inch-8256GB-midnight-1121.jpg"
+        },
+        {
+          "id": "mb-002",
+          "name": "MacBook Pro 14-inch M2 Pro",
+          "price": 1999.99,
+          "isStock": true,
+          "description": "Pro-level performance in a portable size.",
+          "specification": "Apple M2 Pro chip, 16GB RAM, 512GB SSD, 14-inch Liquid Retina XDR",
+          "rating": 4.9,
+          "image": "https://rmtibd.com/wp-content/uploads/2024/12/MacBook-Pro-M2-Pro-14-Inch-1.jpg"
+        },
+        {
+          "id": "mb-003",
+          "name": "MacBook Pro 16-inch M2 Max",
+          "price": 3499.99,
+          "isStock": false,
+          "description": "Ultimate MacBook Pro with maximum power.",
+          "specification": "Apple M2 Max chip, 32GB RAM, 1TB SSD, 16-inch Liquid Retina XDR",
+          "rating": 5.0,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3715-45148-8178.jpg"
+        },
+        {
+          "id": "mb-004",
+          "name": "MacBook Air M1",
+          "price": 999.99,
+          "isStock": true,
+          "description": "Affordable and efficient MacBook Air.",
+          "specification": "Apple M1 chip, 8GB RAM, 256GB SSD, 13.3-inch Retina",
+          "rating": 4.7,
+          "image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Laptop/Air%20M1/macbookairm1-800x800.png"
+        }
+      ],
+      "iphones": [
+        {
+          "id": "ip-001",
+          "name": "iPhone 15 Pro",
+          "price": 999.99,
+          "isStock": true,
+          "description": "Latest Pro iPhone with advanced camera.",
+          "specification": "A17 Pro chip, 6GB RAM, 256GB Storage, 6.1-inch OLED",
+          "rating": 4.9,
+          "image": "https://api.dazzle.com.bd/storage/747/iPhone-15-Pro-Natural-Titanium.jpg"
+        },
+        {
+          "id": "ip-002",
+          "name": "iPhone 15",
+          "price": 799.99,
+          "isStock": true,
+          "description": "Latest standard iPhone with powerful features.",
+          "specification": "A16 Bionic chip, 6GB RAM, 128GB Storage, 6.1-inch OLED",
+          "rating": 4.8,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(3)-8671.jpg"
+        },
+        {
+          "id": "ip-003",
+          "name": "iPhone 14 Pro",
+          "price": 899.99,
+          "isStock": false,
+          "description": "Previous generation Pro iPhone.",
+          "specification": "A16 Bionic chip, 6GB RAM, 256GB Storage, 6.1-inch OLED",
+          "rating": 4.7,
+          "image": "https://mobilebuzzbd.com/wp-content/uploads/2023/07/iPhone-14-Pro.jpg"
+        },
+        {
+          "id": "ip-004",
+          "name": "iPhone 14",
+          "price": 699.99,
+          "isStock": true,
+          "description": "Previous generation standard iPhone.",
+          "specification": "A15 Bionic chip, 6GB RAM, 128GB Storage, 6.1-inch OLED",
+          "rating": 4.6,
+          "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-14-Starlight-8954.jpg"
+        },
+        {
+          "id": "ip-005",
+          "name": "iPhone SE (3rd Gen)",
+          "price": 429.99,
+          "isStock": true,
+          "description": "Compact and affordable iPhone with powerful chip.",
+          "specification": "A15 Bionic chip, 4GB RAM, 64GB Storage, 4.7-inch Retina",
+          "rating": 4.5,
+          "image": "https://fonezone.me/cdn/shop/files/ipsered3rd.jpg?v=1725288600"
+        }
+      ]
+    }
+  }
+  
