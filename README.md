@@ -1,3 +1,2 @@
 
-
-- [live link](gedget-haven-code.netlify.app) 
+gedget-haven-code.netlify.app
