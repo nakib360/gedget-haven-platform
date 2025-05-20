@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router'; 
 import {
   ComposedChart,
@@ -19,6 +20,9 @@ const Statistics = () => {
 
   return (
     <div className='px-20'>
+      <Helmet>
+        <title>Statistics | Gedget haven</title>
+      </Helmet>
       <p className='text-3xl font-bold mb-5 text-black'>Statistics</p>
       <div className='px-5 bg-white rounded-2xl py-10' style={{ width: '100%', height: 400 }}>
         <ResponsiveContainer>

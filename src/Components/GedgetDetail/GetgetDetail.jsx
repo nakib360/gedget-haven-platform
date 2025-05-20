@@ -6,6 +6,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import { addToStoredCartList } from "../Js Scripts/SaveToCart";
 import { addToStoredWishList } from "../Js Scripts/SaveToWishlist";
+import { Helmet } from "react-helmet-async";
 
 const GadgetDetail = () => {
   const data = useLoaderData();
@@ -26,6 +27,9 @@ const GadgetDetail = () => {
 
   return (
     <div className="-mt-60">
+      <Helmet>
+        <title>Gedget Detail | Gedget haven</title>
+      </Helmet>
       <div className="px-0 md:px-20">
         <div class=" w-auto rounded-2xl p-5 bg-white text-black ">
           <div class="flex flex-col md:flex-row gap-5 place-items-center">

@@ -1,12 +1,16 @@
 import { Outlet, useRouteError } from "react-router";
 import Navigation from "../Navigation/Navigation";
 import banner from "../../assets/banner.jpg"
+import { Helmet } from "react-helmet-async";
 
 
 const Content = () => {
   const error = useRouteError();
   return (
     <div>
+      <Helmet>
+        <title>Home | gadget haven</title>
+      </Helmet>
       <div className="mb-90">
         <div className=" rounded-b-2xl bg-[#9538e2]">
           <div className="hero-content text-center mx-10 lg:mx-40 pt-5 md:pt-30 flex flex-col items-center">
