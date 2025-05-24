@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
-import { deleteToStoredWishList, saveToWishlist } from "../Js Scripts/SaveToWishlist";
+import {
+  deleteToStoredWishList,
+  saveToWishlist,
+} from "../Js Scripts/SaveToWishlist";
 import { TiDeleteOutline } from "react-icons/ti";
 
 const Wishlist = () => {
-  const wish = saveToWishlist();
   const dataFetch = useLoaderData();
   const data = dataFetch.electronics;
+  const [wish, setWish] = useState([]);
+  const [wishedData, setWishLength] = useState([]);
 
-  const wishedData = data.filter((item) => wish.includes(item.id));
+  useEffect(() => {
+    setWish(saveToWishlist());
+  }, []);
+
+  useEffect(() => {
+    const wishes = data.filter((item) => wish.includes(item.id));
+    setWishLength(wishes);
+  }, [wish, data]);
 
   const handleDeleteWish = (id) => {
     deleteToStoredWishList(id);
-  }
+    const updated = wish.filter((wishId) => wishId !== id);
+    setWish(updated);
+  };
   return (
     <div className="p-10 text-black">
-        <p className="text-3xl font-bold text-black">Wish List</p>
+      <p className="text-3xl font-bold text-black">Wish List</p>
       <div>
         {wishedData.length === 0 ? (
           <p>No wishes available</p>

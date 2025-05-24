@@ -6,16 +6,20 @@ import { TiDeleteOutline } from "react-icons/ti";
 import group from "../../assets/Group.png"
 
 const Cart = () => {
-  const cart = saveToCart();
   const dataFetch = useLoaderData();
   const data = dataFetch.electronics;
-
+  const [cart, setCart] = useState([]);
   const [storedCart, setStoredCart] = useState([]);
+
+
+  useEffect(() => {
+    setCart(saveToCart());
+  },[])
 
   useEffect(() => {
     const carts = data.filter((item) => cart.includes(item.id));
     setStoredCart(carts);
-  }, []);
+  }, [cart, data]);
 
   const handleSort = (value) => {
     const sorted = [...storedCart].sort((a, b) =>
@@ -28,10 +32,14 @@ const Cart = () => {
 
   const handleDeleteCart = (id) => {
     deleteToStoredCartList(id);
+    const update = cart.filter(cartId => cartId !== id);
+    setCart(update);
   };
 
   const handlePurchase = () => {
     deleteAll();
+    setCart([]);
+    setStoredCart([]);
   }
   return (
     <div className="p-10 text-black">

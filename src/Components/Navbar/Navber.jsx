@@ -4,15 +4,20 @@ import { CiHeart } from "react-icons/ci";
 import HeaderContent from "../Header-Content/HeaderContent";
 import { saveToCart } from "../Js Scripts/SaveToCart";
 import { saveToWishlist } from "../Js Scripts/SaveToWishlist";
+import { useEffect, useState } from "react";
 
 const Navber = () => {
   const location = useLocation();
+  const [cartLength, setCartLength] = useState(0);
+  const [wishLength, setWishLength] = useState(0);
 
-  const cartList = saveToCart();
-  const cartLength = cartList.length;
+  useEffect(() => {
+    const cartList = saveToCart();
+    setCartLength(cartList.length);
 
-  const wishList = saveToWishlist();
-  const wishLength = wishList.length;
+    const wishList = saveToWishlist();
+    setWishLength(wishList.length);
+  }, []);
 
   const navItems = (
     <>
@@ -21,7 +26,13 @@ const Navber = () => {
           to="/"
           className={({ isActive }) =>
             `${isActive ? "bg-black text-white" : ""} ${
-              location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones"
+              location.pathname === "/" ||
+              location.pathname === "/Laptops" ||
+              location.pathname === "/Accessories" ||
+              location.pathname === "/Smart-Watches" ||
+              location.pathname === "/MacBook" ||
+              location.pathname === "/Iphone" ||
+              location.pathname === "/Phones"
                 ? " text-white"
                 : "hover:bg-[#9538e2] text-black"
             }`
@@ -35,7 +46,13 @@ const Navber = () => {
           to="/Statistics"
           className={({ isActive }) =>
             `${isActive ? "bg-black text-white" : ""} ${
-              location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones"
+              location.pathname === "/" ||
+              location.pathname === "/Laptops" ||
+              location.pathname === "/Accessories" ||
+              location.pathname === "/Smart-Watches" ||
+              location.pathname === "/MacBook" ||
+              location.pathname === "/Iphone" ||
+              location.pathname === "/Phones"
                 ? " text-white"
                 : "hover:bg-[#9538e2] text-black"
             }`
@@ -49,7 +66,13 @@ const Navber = () => {
           to="/Dashboard"
           className={({ isActive }) =>
             `${isActive ? "bg-black text-white" : ""} ${
-              location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones"
+              location.pathname === "/" ||
+              location.pathname === "/Laptops" ||
+              location.pathname === "/Accessories" ||
+              location.pathname === "/Smart-Watches" ||
+              location.pathname === "/MacBook" ||
+              location.pathname === "/Iphone" ||
+              location.pathname === "/Phones"
                 ? " text-white"
                 : "hover:bg-[#9538e2] text-black"
             }`
@@ -62,10 +85,30 @@ const Navber = () => {
   );
 
   return (
-    <div className={`${location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones" ? "mb-0" : "mb-10"}`}>
+    <div
+      className={`${
+        location.pathname === "/" ||
+        location.pathname === "/Laptops" ||
+        location.pathname === "/Accessories" ||
+        location.pathname === "/Smart-Watches" ||
+        location.pathname === "/MacBook" ||
+        location.pathname === "/Iphone" ||
+        location.pathname === "/Phones"
+          ? "mb-0"
+          : "mb-10"
+      }`}
+    >
       <div
         className={`navbar ${
-          location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones"  ? "bg-[#9538e2] rounded-t-2xl" : "bg-white"
+          location.pathname === "/" ||
+          location.pathname === "/Laptops" ||
+          location.pathname === "/Accessories" ||
+          location.pathname === "/Smart-Watches" ||
+          location.pathname === "/MacBook" ||
+          location.pathname === "/Iphone" ||
+          location.pathname === "/Phones"
+            ? "bg-[#9538e2] rounded-t-2xl"
+            : "bg-white"
         } shadow-none  px-5 lg:px-20`}
       >
         <div className="navbar-start">
@@ -95,7 +138,15 @@ const Navber = () => {
           </div>
           <a
             className={`font-bold text-xl ${
-              location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones" ? "text-white" : "text-black"
+              location.pathname === "/" ||
+              location.pathname === "/Laptops" ||
+              location.pathname === "/Accessories" ||
+              location.pathname === "/Smart-Watches" ||
+              location.pathname === "/MacBook" ||
+              location.pathname === "/Iphone" ||
+              location.pathname === "/Phones"
+                ? "text-white"
+                : "text-black"
             } `}
           >
             Gadget Heaven
@@ -115,7 +166,15 @@ const Navber = () => {
               <div className="relative inline-block">
                 <div
                   className={`bg-white rounded-full p-3 relative ${
-                    location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones" ? "" : "border border-black"
+                    location.pathname === "/" ||
+                    location.pathname === "/Laptops" ||
+                    location.pathname === "/Accessories" ||
+                    location.pathname === "/Smart-Watches" ||
+                    location.pathname === "/MacBook" ||
+                    location.pathname === "/Iphone" ||
+                    location.pathname === "/Phones"
+                      ? ""
+                      : "border border-black"
                   }`}
                 >
                   <FiShoppingCart className="text-black text-xl" />
@@ -130,7 +189,15 @@ const Navber = () => {
               <div className="relative inline-block">
                 <div
                   className={`bg-white rounded-full p-3 ${
-                    location.pathname === "/" || location.pathname === "/Laptops" || location.pathname === "/Accessories" || location.pathname === "/Smart-Watches" || location.pathname === "/MacBook" ||  location.pathname === "/Iphone" || location.pathname === "/Phones" ? "" : "border border-black"
+                    location.pathname === "/" ||
+                    location.pathname === "/Laptops" ||
+                    location.pathname === "/Accessories" ||
+                    location.pathname === "/Smart-Watches" ||
+                    location.pathname === "/MacBook" ||
+                    location.pathname === "/Iphone" ||
+                    location.pathname === "/Phones"
+                      ? ""
+                      : "border border-black"
                   }`}
                 >
                   <CiHeart className="text-black text-xl font-bold" />
