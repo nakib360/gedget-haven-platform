@@ -19,16 +19,16 @@ const Statistics = () => {
   const data = dataFetch.electronics;
 
   return (
-    <div className='px-20'>
+    <div className='px-5 md:px-20'>
       <Helmet>
         <title>Statistics | Gedget haven</title>
       </Helmet>
       <p className='text-3xl font-bold mb-5 text-black'>Statistics</p>
-      <div className='px-5 bg-white rounded-2xl py-10' style={{ width: '100%', height: 400 }}>
+      <div className='pr-3 md:px-5 bg-white rounded-2xl py-10' style={{ width: '100%', height: 400 }}>
         <ResponsiveContainer>
           <ComposedChart
             data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            margin={{ top: 5, right: 5, left: 5, bottom: 5 }}
           >
             <CartesianGrid strokeDasharray="4 4" />
             <XAxis dataKey="name" />

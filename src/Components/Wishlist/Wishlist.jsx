@@ -27,7 +27,7 @@ const Wishlist = () => {
     setWish(updated);
   };
   return (
-    <div className="p-10 text-black">
+    <div className="py-10 px-3 md:px-10 text-black">
       <p className="text-3xl font-bold text-black">Wish List</p>
       <div>
         {wishedData.length === 0 ? (
@@ -36,7 +36,7 @@ const Wishlist = () => {
           <div>
             {wishedData.map((data) => (
               <div className="text-black">
-                <div className="card card-side bg-white shadow-sm p-10 m-5">
+                <div className="card card-side bg-white shadow-sm p-10 m-5 flex flex-col md:flex-row">
                   <figure>
                     <img src={data.image} alt="Movie " className="max-h-100" />
                   </figure>

@@ -11,7 +11,7 @@ const Content = () => {
       <Helmet>
         <title>Home | gadget haven</title>
       </Helmet>
-      <div className="mb-90">
+      <div className="mb-10 md:mb-90">
         <div className=" rounded-b-2xl bg-[#9538e2]">
           <div className="hero-content text-center mx-10 lg:mx-40 pt-5 md:pt-30 flex flex-col items-center">
             <div className="">
@@ -27,7 +27,7 @@ const Content = () => {
                 Shop Now
               </button>
             </div>
-            <div className="card w-outo rounded-3xl p-5 bg-[#ffffff60] border-2 border-white mt-10 md:mt-20 -mb-30 md:-mb-80">
+            <div className="card w-outo hidden md:block rounded-3xl p-5 bg-[#ffffff60] border-2 border-white mt-10 md:mt-20 -mb-30 md:-mb-80">
               <figure>
                 <img className="rounded-2xl" src={banner} alt="Shoes" />
               </figure>
