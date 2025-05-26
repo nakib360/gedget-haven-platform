@@ -139,9 +139,9 @@ const Navber = () => {
             : "bg-white"
         } shadow-none  px-5 lg:px-20`}
       >
-        <div className="navbar-start min-w-50">
+        <div className="navbar-start">
           <div className="dropdown lg:hidden">
-            <label tabIndex={0} className={`${["/"].includes(location.pathname) ? "text-white" : "text-black"} mx-5 lg:hidden`}>
+            <label tabIndex={0} className={`${["/"].includes(location.pathname) ? "text-white" : "text-black"} mx-3 md:mx-5 lg:hidden`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -165,7 +165,7 @@ const Navber = () => {
             </ul>
           </div>
           <a
-            className={`font-bold text-xl ${
+            className={`font-bold  md:text-xl ${
               [
                 "/",
                 "/Laptops",
